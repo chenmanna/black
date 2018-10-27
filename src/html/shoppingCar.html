@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8" />
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <script type="text/javascript" src="lib/jQuery.js"></script>
-    <script type="text/javascript" src="lib/jquery-lmCarousel.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/DetailPages.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../css/shoppingCar.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <script type="text/javascript" src="../lib/jQuery.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/shoppingCar.js"></script>
+     
 </head>
-<body>
+<body> 
 <!-- 定位右边栏 -->
-<div id="moxi">
-<!-- header --> 
+<div id="moxi"> 
+<!-- header -->
     <div id="header">
         <div class="header-t">
-            <div class="con">
+            <div class="con"> 
                 <p class="fl">
                     <span>首页</span>
                     <span class="star">收藏摩西</span>
@@ -23,18 +26,18 @@
                 </p>
                 <ul class="con-r fr">
                     <li>您好，欢迎来到摩西！</li>
-                    <li><a href="html/login.html">登陆&nbsp;免费注册</a></li>
-                    <li><a href="html/shoppingCar.html" ><span class="car">购物车<span class="carNum"></span>件商品</span></a></li>
+                    <li><a href="login.html">登陆&nbsp;免费注册</a></li>
+                    <li><a href="shoppingCar.html" ><span class="car">购物车<span class="carNum"></span>件商品</span></a></li>
                     <li class="wechat"><a href="" >在线客服400-660-6366</a></li>
                 </ul>
-            </div>
+            </div> 
             <!-- 二维码图片 -->
             <img src="" alt="" />
         </div>
         <div class="header-b">
             <div class="con">
                 <div class="fl">
-                    <a href="#" class="fl"></a>
+                    <a href="../index.html" class="fl"></a>
                     <div class="fl search">
                         <p>日元汇率：0.061812 （100日元=6.1812元）</p>
                         <input type="text" placeholder="雪肌精" class="search-l" /><input type="button" value="搜索" class="search-r" />
@@ -44,9 +47,9 @@
                 <div class="fr img100" ></div>
             </div>
         </div>
-    </div>
-    <!-- </div> --> 
-     <div id="nav">
+    </div> 
+    <!-- nav -->
+    <div id="nav">
         <ul class="con">
             <li class="menu">
                 <a href="">商品全部分类</a>
@@ -57,7 +60,7 @@
                             <div class="navText">
                                 <div>
                                     <h3 href="" class="aa">摩西热卖</h3>
-                                    <a>面膜</a>
+                                    <a href="">面膜</a>
                                     <a href="">美容</a>
                                     <a href="">巧克力</a>
                                     <a href="">白色恋人</a>
@@ -623,171 +626,159 @@
             <li><a href="">留言板</a></li>
         </ul>
     </div>
-    <!-- banner -->
-    <div id="banner">
+    <div id="shoppingCar">
         <div class="con">
-            <div class="banners fl">
+            <p>
+                <span class="goods">商品</span>
+                <span>价格</span>
+                <span>数量</span>
+                <span>小计（元）</span> 
+                <span>操作</span>
+            </p>
+            <div class="goodsNumber">
+            hei  !购物车没有商品噢!!!
             </div>
-            <img class="img fl" src="images/Banner_r.png" />
-        </div>
-    </div>
-    <!-- hotsale -->
-    <div id="hotsale">
-        <div class="con">
-            <img src="images/hotsale.png" alt="" class="fl img_r" />
-            <div class="fr">
-                <ul>
-                    <li><img src="images/hotsale_r.png" alt="" /></li>
-                    <li><img src="images/hotsale_r.png" alt="" /></li>
-                    <li><img src="images/hotsale_r.png" alt="" /></li>
-                    <li><img src="images/hotsale_r.png" alt="" /></li>
+            <div class="total"><p><span>总价(不含运费)：</span><span class="totalPrice"></span><input type="text" value="全部结算" class="buyMomey" /></p></div>
+            <p class="tuijie">
+                <span>最新推荐</span>
+            </p>
+            <div class="banner">
+                <ul class="bannerlist">
+                    <li class="bannerLi">
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner1.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner1.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner1.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner1.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner1.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner1.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div> 
+                    </li class="bannergoods1">
+                    <li class="bannerLi">
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner2.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner2.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner2.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner2.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner2.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner2.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                    </li class="bannergoods1">
+                    <li class="bannerLi">
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner3.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner3.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner3.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner3.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner3.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner3.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                    </li class="bannergoods1">
+                    <li class="bannerLi">
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner4.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner4.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner4.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner4.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner4.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                        <div class="bannergoods1">
+                            <div class="imgBox"><img src="../images/s_banner4.jpg" alt="" /></div>
+                            <p>贝亲/PIGEON 母婴用品 新生儿/婴儿/宝宝用 母乳实感塑料/PPSU材质奶瓶 四款可选 240ml,浅绿色</p>
+                            <p class="fontColor">1932日元(约120.36 元人民币)</p>
+                        </div>
+                    </li class="bannergoods1">
                 </ul>
+
+
             </div>
         </div>
-        <div class="con brand">
-            <div>
-                <p><span class="txt">品牌热卖</span><span>ランジェリーナ方</span></p>
-            </div>
-            <div class="brandImg">
-                <div class="fl brandImg_l"></div>
-                <div class="fl brandImg_c">
-                    <ul>
-                        <li><img src="images/brand_c.png"  alt="" /></li>
-                        <li><img src="images/brand_c.png"  alt="" /></li>
-                        <li><img src="images/brand_c.png" alt="" /></li>
-                        <li><img src="images/brand_c.png" alt="" /></li>
-                    </ul>
-                    <ul>
-                        <li><img src="images/brand_c.png" alt="" /></li>
-                        <li><img src="images/brand_c.png" alt="" /></li>
-                        <li><img src="images/brand_c.png" alt="" /></li>
-                        <li><img src="images/brand_c.png" alt="" /></li>
-                    </ul>
-                    <ul>
-                        <li><img src="images/brand_c.png" alt="" /></li>
-                        <li><img src="images/brand_c.png" alt="" /></li>
-                        <li><img src="images/brand_c.png" alt="" /></li>
-                        <li><img src="images/brand_c.png" alt="" /></li>
-                    </ul>
-                </div>
-                <div class="fr brandImg_r"></div>
-            </div>
-        </div>     
     </div>
-    <!--Cgoods-->
-    <div id="Cgoods">
-        <div class="con">
-            <div>
-                <p>活动推荐</p>
-                <div class="goodsImgs">
-                    <div class="Cgoods_l banner1">
-                    </div>
-                    <div class="Cgoods_r">
-                        <ul class="Cgoods_r1">
-                            <li class="bigImg1"></li>
-                            <li class="lis"></li>
-                            <li class="lis"></li>
-                        </ul>
-                        <ul class="Cgoods_r2">
-                            <li class="lis"></li>
-                            <li class="lis"></li>
-                            <li class="bigImg2"></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="con">
-            <div>
-                <p>活动推荐</p>
-                <div class="goodsImgs">
-                    <div class="Cgoods_l banner2">
-                    </div>
-                    <div class="Cgoods_r">
-                        <ul class="Cgoods_r1">
-                            <li class="bigImg1"></li>
-                            <li class="lis"></li>
-                            <li class="lis"></li>
-                        </ul>
-                        <ul class="Cgoods_r2">
-                            <li class="lis"></li>
-                            <li class="lis"></li>
-                            <li class="bigImg2"></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="con">
-            <div>
-                <p>活动推荐</p>
-                <div class="goodsImgs">
-                    <div class="Cgoods_l banner3">
-                    </div>
-                    <div class="Cgoods_r">
-                        <ul class="Cgoods_r1">
-                            <li class="bigImg1"></li>
-                            <li class="lis"></li>
-                            <li class="lis"></li>
-                        </ul>
-                        <ul class="Cgoods_r2">
-                            <li class="lis"></li>
-                            <li class="lis"></li>
-                            <li class="bigImg2"></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="con">
-            <div>
-                <p>活动推荐</p>
-                <div class="goodsImgs">
-                    <div class="Cgoods_l banner4">
-                    </div>
-                    <div class="Cgoods_r">
-                        <ul class="Cgoods_r1">
-                            <li class="bigImg1"></li>
-                            <li class="lis"></li>
-                            <li class="lis"></li>
-                        </ul>
-                        <ul class="Cgoods_r2">
-                            <li class="lis"></li>
-                            <li class="lis"></li>
-                            <li class="bigImg2"></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-       <div class="con">
-            <div>
-                <p>活动推荐</p>
-                <div class="goodsImgs">
-                    <div class="Cgoods_l banner5">
-                    </div>
-                    <div class="Cgoods_r">
-                        <ul class="Cgoods_r1">
-                            <li class="bigImg1"></li>
-                            <li class="lis"></li>
-                            <li class="lis"></li>
-                        </ul>
-                        <ul class="Cgoods_r2">
-                            <li class="lis"></li>
-                            <li class="lis"></li>
-                            <li class="bigImg2"></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        
-    </div>
+    
     <!-- footer -->
     <div id="footer">
         <div class="border"></div>
@@ -846,12 +837,12 @@
                     <span>400-660-6366</span>
                     <span>在线客服</span>
                     <span>（周一至周五 09：00~18：00）</span>
-                    <a href="#"><img src="images/footer_refer.png" alt="" /></a>
+                    <a href="#"><img src="../images/footer_refer.png" alt="" /></a>
                     <span>周六周日请发邮件至cs@moximoxi.net</span>
                     <span>我们会尽快解决您的问题</span>
                 </div>
                 <div class="footerTop_r fr">
-                    <img src="images/QR_code.png" alt="" />
+                    <img src="../images/QR_code.png" alt="" />
                     <span class="firstSpan">摩西网官方微信</span>
                     <span>摩西网五周年中大促</span>
                     <span>关注微信千元现金卷</span>
@@ -866,65 +857,19 @@
         </div>
         <div class="footerCenter">
             <div class="con">
-                <img src="images/footer_logo.png" alt="" />
+                <img src="../images/footer_logo.png" alt="" />
             </div>
         </div>
         <div class="footerRight">
             <div class="con">
-                <p class="text">沪ICP备15046510号&nbsp;摩西网版权所有&nbsp;Copuright&nbsp;2009-2015&nbsp;All Ringhts Reserved<a href="#"><img src="images/footer12 (1).gif" height="12" width="50" alt="" /></a></p>
-                <p><a href="#"><img src="images/footer12 (2).png" alt="" /></a>
-                <a href="#"><img src="images/footer12 (1).png" alt="" /></a>
-                <a href="#"><img src="images/footer12 (4).png" alt="" /></a>
-                <a href="#"><img src="images/footer12 (5).png" alt="" /></a>
-                <a href="#"><img src="images/footer12 (6).png" alt="" /></a>
-                <a href="#"><img src="images/footer12 (3).png" alt="" /></a></p>
+                <p class="text">沪ICP备15046510号&nbsp;摩西网版权所有&nbsp;Copuright&nbsp;2009-2015&nbsp;All Ringhts Reserved<a href="#"><img src="../images/footer12 (1).gif" height="12" width="50" alt="" /></a></p>
+                <p><a href="#"><img src="../images/footer12 (2).png" alt="" /></a>
+                <a href="#"><img src="../images/footer12 (1).png" alt="" /></a>
+                <a href="#"><img src="../images/footer12 (4).png" alt="" /></a>
+                <a href="#"><img src="../images/footer12 (5).png" alt="" /></a>
+                <a href="#"><img src="../images/footer12 (6).png" alt="" /></a>
+                <a href="#"><img src="../images/footer12 (3).png" alt="" /></a></p>
             </div>
-        </div>
-    </div>
-    <div id="Sidebar_r">
-        <div class="container">
-            <div>
-                <img src="images/Sidebar.png" alt="" />
-                <span>快递</span>
-            </div>
-             <div>
-                <img src="images/Sidebar.png" alt="" />
-                <span>我</span>
-            </div>
-             <div>
-                <img src="images/Sidebar.png" alt="" />
-                <span>客服</span>
-            </div>
-             <div>
-                <img src="images/Sidebar.png" alt="" />
-                <span>收藏</span>
-            </div>
-             <div>
-                <img src="images/Sidebar.png" alt="" />
-                <span>代购</span>
-            </div>
-             <div>
-                <img src="images/Sidebar.png" alt="" />
-                <span>魔币</span>
-            </div>
-             <div>
-                <img src="images/Sidebar.png" alt="" />
-                <!-- <span></span> -->
-            </div>
-        </div>
-    </div>
-    <div id="Sidebar_l">
-        <div>
-            <div>活动推荐</div>
-            <div>活动推荐</div>
-            <div>活动推荐</div>
-            <div>活动推荐</div>
-            <div>热销单品</div>
-            <div>热销单品</div>
-            <div>热销单品</div>
-            <div>热销单品</div>
-            <div>热销单品</div>
-            <div class="toTop">返回顶部</div>
         </div>
     </div>
 </div>
